@@ -65,6 +65,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\large.css" />
+    <Content Include="css\medium.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\small.css" />
+    <Content Include="css\style.css" />
     <Content Include="index.html" />
     <Content Include="scripts\main.js" />
     <Content Include="Web.config" />
@@ -72,9 +77,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="styles\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

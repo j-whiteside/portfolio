@@ -2,8 +2,30 @@
 <html>
 <head>
     <title>Jeremy Whiteside</title>
+    <!-- Normalize css -->
+    <link href="css/normalize.css" rel="stylesheet" media="screen">
+
+    <!-- Reset the zoom and set the device width to equal the width -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <!-- Add the main stylesheet with a link element, including a media attribute for screen -->    
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Add a link element below to attach small.css for smaller window sizes (smartphones) with a media attribute that limits the max-width to 480px -->
+    <link href="css/small.css" rel="stylesheet" media="screen and (max-width:480px)">
+
+    <!-- medium.css for medium window sizes (tablets) with a media attribute that limits the min-width to 481px and the max-width to 1025px -->
+    <link href="css/medium.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1024px)">
+
+    <!-- Add another link element to target only screens 1025px or larger (notebooks and desktops)-->
+    <link href="css/large.css" rel="stylesheet" media="screen and (min-width:1025px)">
+    
+    <!-- STEP 10: Add another link element to attach a CSS file for print use only -->
+    <link href="css/print.css" rel="stylesheet" media="print">
 </head>
 <body>
 
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+﻿/* CSS for large screens */
+
+h1:after { content: " (Large)"; }
+/* Arrange a 3-column layout */
+#container {
+background:olive;
+}
+section#s1, section#s2, section#s3 {
+	float:left;
+	width:25%;
+	
+
+}
+section#s2, section#s3 {
+	margin-left:5%;
+}
+footer {
+	clear:both;
+	
+	
+}
+
+
