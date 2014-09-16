@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="css\large.css" />
     <Content Include="css\medium.css" />
+    <Content Include="css\menu.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\small.css" />
     <Content Include="css\style.css" />
