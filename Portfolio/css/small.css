@@ -1,9 +1,0 @@
-﻿/* CSS for small screens */
-
-h1:after { content: " (Small)"; }
-
-#container{
-	background:lightblue;	
-}
-
-/* Set the color for the #container element to light blue */

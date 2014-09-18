@@ -65,14 +65,37 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\large.css" />
-    <Content Include="css\medium.css" />
-    <Content Include="css\menu.css" />
+    <Content Include="css\foundation.min.css" />
     <Content Include="css\normalize.css" />
-    <Content Include="css\small.css" />
     <Content Include="css\style.css" />
+    <Content Include="humans.txt" />
     <Content Include="index.html" />
+    <Content Include="robots.txt" />
+    <Content Include="scripts\foundation.min.js" />
+    <Content Include="scripts\foundation\foundation.abide.js" />
+    <Content Include="scripts\foundation\foundation.accordion.js" />
+    <Content Include="scripts\foundation\foundation.alert.js" />
+    <Content Include="scripts\foundation\foundation.clearing.js" />
+    <Content Include="scripts\foundation\foundation.dropdown.js" />
+    <Content Include="scripts\foundation\foundation.equalizer.js" />
+    <Content Include="scripts\foundation\foundation.interchange.js" />
+    <Content Include="scripts\foundation\foundation.joyride.js" />
+    <Content Include="scripts\foundation\foundation.js" />
+    <Content Include="scripts\foundation\foundation.magellan.js" />
+    <Content Include="scripts\foundation\foundation.offcanvas.js" />
+    <Content Include="scripts\foundation\foundation.orbit.js" />
+    <Content Include="scripts\foundation\foundation.reveal.js" />
+    <Content Include="scripts\foundation\foundation.slider.js" />
+    <Content Include="scripts\foundation\foundation.tab.js" />
+    <Content Include="scripts\foundation\foundation.tooltip.js" />
+    <Content Include="scripts\foundation\foundation.topbar.js" />
+    <Content Include="scripts\jquery.sticky-kit.min.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\vendor\fastclick.js" />
+    <Content Include="scripts\vendor\jquery.cookie.js" />
+    <Content Include="scripts\vendor\jquery.js" />
+    <Content Include="scripts\vendor\modernizr.js" />
+    <Content Include="scripts\vendor\placeholder.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
