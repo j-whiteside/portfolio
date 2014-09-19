@@ -1,36 +1,26 @@
-﻿#welcome{
+﻿div.welcome{
     background-color: black;
-}
-#welcome p{
     color: #F0F0F0;
+    z-index: 3;
 }
 
-#about{
+div.about{
     background-color: red;
-}
-#about p{
     color: #F0F0F0;
 }
 
-#projects{
+div.projects{
     background-color: orange;
-}
-#projects p{
     color: #F0F0F0;
 }
 
-#services{
+div.services{
     background-color: green;
-}
-#services p{
     color: #F0F0F0;
 }
 
-#contact{
+div.contact{
     background-color: indigo;
-    color: red;
-}
-#contact p{
     color: #F0F0F0;
 }
 
@@ -38,7 +28,24 @@ body{
     height: 5000px;
 }
 
-div{
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+nav{
+    position: fixed;
+    z-index: 2;
 }
+
+.followMeBar{
+	padding: 1%;
+    color: white;
+	position: relative;
+	z-index: 1;
+}
+.followMeBar.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.followMeBar.fixed.absolute{
+	position: absolute;
+}
+
