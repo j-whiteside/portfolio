@@ -1,12 +1,20 @@
-﻿div.welcome{
+﻿div{
+    margin-bottom: 0px;
+}
+
+div.welcome{
     background-color: black;
     color: #F0F0F0;
+    position: relative;
     z-index: 3;
 }
 
 div.about{
     background-color: red;
     color: #F0F0F0;
+}
+div.followWrap{
+    background-color: cyan;
 }
 
 div.projects{
@@ -28,7 +36,7 @@ body{
     height: 5000px;
 }
 
-nav{
+nav#scroll{
     position: fixed;
     z-index: 2;
 }
@@ -47,5 +55,9 @@ nav{
 }
 .followMeBar.fixed.absolute{
 	position: absolute;
+}
+
+p{
+    margin-bottom: 0;
 }
 
