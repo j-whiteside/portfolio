@@ -87,3 +87,16 @@ $(document).ready(function () {
         target: 'body'
     });
 });
+
+// Sliding sidebar
+// http://stackoverflow.com/questions/21894502/slidedown-drop-down-menu
+$(document).ready(function () {
+
+    $('#parent').hover(function () {
+        $('#submenu').stop(true, true).slideDown(200);
+    }, function () {
+        $('#submenu').stop(true, true).slideUp(200);
+
+    });
+
+});

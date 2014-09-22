@@ -69,6 +69,17 @@
     <Content Include="css\normalize.css" />
     <Content Include="css\style.css" />
     <Content Include="humans.txt" />
+    <Content Include="images\arrow-down.png" />
+    <Content Include="images\aTeKBoyyc.png" />
+    <Content Include="images\circle.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\github.png" />
+    <Content Include="images\googleplus.png" />
+    <Content Include="images\logo-placeholder.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\menu.png" />
+    <Content Include="images\phone.png" />
+    <Content Include="images\soundcloud.png" />
     <Content Include="index.html" />
     <Content Include="robots.txt" />
     <Content Include="scripts\foundation.min.js" />
@@ -102,9 +113,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
