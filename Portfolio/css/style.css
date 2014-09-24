@@ -1,7 +1,9 @@
 ﻿section{
+    
     margin-bottom: 0px;
     padding-bottom: 20px;
 }
+
 
 h1, h2, h3, h4, h5, h6{
     margin-top: 0px;
@@ -18,20 +20,38 @@ h1, h2, h3, h4, h5, h6{
 .about{
     background-color: #ff7f12;
     color: #F0F0F0;
+    padding-top: 131px;
 }
-.followWrap{
-    background-color: cyan;
-}
+    .about footer{
+        background: -webkit-linear-gradient(#ff7f12, #25afff); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#ff7f12, #25afff); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#ff7f12, #25afff); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#ff7f12, #25afff); /* Standard syntax */
+    }
+
 
 .projects{
     background-color: #25afff;
     color: #F0F0F0;
+    padding-top: 131px;
 }
+    .projects footer{
+        background: -webkit-linear-gradient(#25afff, green); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#25afff, green); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#25afff, green); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#25afff, green); /* Standard syntax */
+    }
 
 .services{
     background-color: green;
     color: #F0F0F0;
 }
+    .services footer{
+        background: -webkit-linear-gradient(green, indigo); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(green, indigo); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradientgreen, indigo); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(green, indigo); /* Standard syntax */
+    }
 
 .contact{
     background-color: indigo;
@@ -89,23 +109,7 @@ nav#scroll{
     margin: 0px 10px;
 }
 
-.followMeBar{
-	padding: 1%;
-    color: white;
-    min-height: 132px;
-	position: relative;
-	z-index: 2;
-}
-.followMeBar.fixed{
-    min-height: 132px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-}
-.followMeBar.fixed.absolute{
-	position: absolute;
-}
+
 
 p{
     margin-bottom: 0;
@@ -125,10 +129,15 @@ ul {
 
 .sectionfooter{
     border-top: 2px dotted #666;
-    margin: 15px 0px;
+    height: 100px;
+    position: relative;
+    bottom: -20px;
 }
 
-main{
+#mainnav{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -136,6 +145,10 @@ main{
     z-index: 0;
 }
 
+li .active{
+    border-bottom: 2px solid white;
+    font-weight: bolder;
+}
 
 /*.sectionfooter li{
     display: inline;
@@ -214,3 +227,27 @@ nav > ul > li > ul > li > a {
 
 	width: 125px;
 }
+
+/* STICKY HEADERS CSS
+
+ .followWrap{
+    background-color: cyan;
+}
+
+.followMeBar{
+	padding: 1%;
+    color: white;
+    min-height: 132px;
+	position: relative;
+	z-index: 2;
+}
+.followMeBar.fixed{
+    min-height: 132px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.followMeBar.fixed.absolute{
+	position: absolute;
+}*/
