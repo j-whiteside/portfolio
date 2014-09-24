@@ -1,4 +1,53 @@
-﻿section{
+﻿header.top{
+   /*
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))); 
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -o-linear-gradient(top,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+*/
+   
+   background-repeat: repeat-x;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+header #behindlogo{
+    /*background-color: black;*/
+    height: 75px;
+}
+    header #behindlogo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+nav#scroll{
+    background: url("./images/logos/header.png") repeat-x;
+    display: block;
+    height: 30px;
+    text-align: center;
+}
+
+#scroll a{
+    color: white;
+    margin: 0px 10px;
+}
+
+#mainnav{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+
+section{
     
     margin-bottom: 0px;
     padding-bottom: 20px;
@@ -62,52 +111,27 @@ body{
     height: 5000px;
 }
 
-.top{
-   
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))); 
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
-    background: -o-linear-gradient(top,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
 
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-}
 
 main section header{
     margin-top: 0px;
 }
 
-header #behindlogo{
-    
-}
 
 section header{
     margin: 100px 0px 70px 0px;
 }
 
-header img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 img#badge{
     display: block;
     margin-left: auto;
     margin-right:auto;
 }
-nav#scroll{
-    
-    height: 30px;
-    text-align: center;
-}
 
-#scroll a{
-    color: white;
-    margin: 0px 10px;
-}
+
+
 
 
 
@@ -134,12 +158,7 @@ ul {
     bottom: -20px;
 }
 
-#mainnav{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 
 .columns{
     z-index: 0;
