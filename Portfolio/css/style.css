@@ -6,32 +6,20 @@
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
     background: -o-linear-gradient(top,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
 */
-   
-   background-repeat: repeat-x;
+    background: url("../images/logos/header.png") repeat-x;
+    height: 130px;
     position: fixed;
     width: 100%;
     z-index: 3;
 }
 
-header #behindlogo{
-    /*background-color: black;*/
-    height: 75px;
-}
-    header #behindlogo img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
 nav#scroll{
-    background: url("./images/logos/header.png") repeat-x;
-    display: block;
-    height: 30px;
+    display: block;    
     text-align: center;
 }
 
 #scroll a{
+    bottom: -60px;
     color: white;
     margin: 0px 10px;
 }
@@ -41,6 +29,15 @@ nav#scroll{
     margin-left: auto;
     margin-right: auto;
     
+}
+#mainnav a img#logo{
+    position: relative;
+    top: -70px;
+}
+
+#dropdown img{
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 
