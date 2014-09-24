@@ -3,11 +3,16 @@
     padding-bottom: 20px;
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0px;
+    text-align: center;
+}
+
 .welcome{
     background-color: black;
     color: #F0F0F0;
     position: relative;
-    z-index: 3;
+    z-index: 4;
 }
 
 .about{
@@ -38,13 +43,28 @@ body{
 }
 
 .top{
+   
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))); 
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
+    background: -o-linear-gradient(top,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
+}
+
+main section header{
+    margin-top: 0px;
 }
 
 header #behindlogo{
-    background-color: black;
+    
+}
+
+section header{
+    margin: 100px 0px 70px 0px;
 }
 
 header img{
@@ -53,8 +73,13 @@ header img{
     margin-right: auto;
 }
 
+img#badge{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
 nav#scroll{
-    background-color: rgba(0, 0, 0, 0.2);
+    
     height: 30px;
     text-align: center;
 }
@@ -67,16 +92,16 @@ nav#scroll{
 .followMeBar{
 	padding: 1%;
     color: white;
-    height: 112px;
+    min-height: 132px;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 .followMeBar.fixed{
-    height: 112px;
+    min-height: 132px;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 0;
+	z-index: 1;
 }
 .followMeBar.fixed.absolute{
 	position: absolute;
@@ -105,6 +130,10 @@ ul {
 
 main{
     
+}
+
+.columns{
+    z-index: 0;
 }
 
 
@@ -170,11 +199,12 @@ nav > ul > li > ul {
 	display: none;
     left: -40px;
 	position: absolute;
-	top: 30px;
+	top: 32px;
 
 }
 
 nav > ul > li > ul > li {
+    color: white;
 	position: relative;
 }
 

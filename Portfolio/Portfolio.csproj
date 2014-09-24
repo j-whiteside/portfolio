@@ -57,6 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\jeremywhiteside.jpg" />
+    <Content Include="images\logos\Banner.psd" />
+    <Content Include="images\logos\JW Badge v1.psd" />
+    <Content Include="images\logos\JW Badge v2.psd" />
+    <Content Include="images\logos\JW v1.psd" />
+    <Content Include="images\logos\logo 3.psd" />
+    <Content Include="images\logos\logo draft.psd" />
+    <Content Include="images\logos\logo old.psd" />
+    <Content Include="images\logos\logo.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,6 +85,18 @@
     <Content Include="images\github.png" />
     <Content Include="images\googleplus.png" />
     <Content Include="images\logo-placeholder.png" />
+    <Content Include="images\logos\Banner.jpg" />
+    <Content Include="images\logos\card.jpg" />
+    <Content Include="images\logos\General Contractor.jpg" />
+    <Content Include="images\logos\JW Badge v1 copy.png" />
+    <Content Include="images\logos\JW Badge v2 copy.png" />
+    <Content Include="images\logos\logo 1.jpg" />
+    <Content Include="images\logos\logo 2.jpg" />
+    <Content Include="images\logos\logo 3.jpg" />
+    <Content Include="images\logos\logo 4.jpg" />
+    <Content Include="images\logos\logo.jpg" />
+    <Content Include="images\logos\mvBackground.jpg" />
+    <Content Include="images\logos\mvBackground.png" />
     <Content Include="images\mail.png" />
     <Content Include="images\menu.png" />
     <Content Include="images\phone.png" />
