@@ -18,27 +18,78 @@ nav#scroll{
     text-align: center;
 }
 
-#scroll a{
+nav#scroll #mainnav a{
     bottom: -60px;
     color: white;
     margin: 0px 10px;
 }
 
-#mainnav{
+ul#mainnav{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     
 }
-#mainnav a img#logo{
+ul#mainnav a img#logo{
     position: relative;
     top: -70px;
 }
 
-#dropdown img{
-    display: inline-block;
-    vertical-align: bottom;
+ul#dropdown{
+    top: 40px;
+    position: fixed;
+    width: 200px;
 }
+
+ul#dropdown li{
+    
+    
+}
+
+ul#additionallinks{
+    height: 620px;
+}
+
+
+div.keepconnected{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 0px 0px 0px;
+    position: fixed;
+    right: 0px;
+    top: 65px;
+    width: 200px;
+}
+
+div.keepconnected ul{
+    margin-left: 0px;
+}
+
+div.keepconnected > ul > li{
+
+    color: white;
+	position: relative;
+}
+
+div.keepconnected > ul > li > a {
+    
+	display: block;
+	padding: 20px 30px;
+	width: 100%;
+}
+
+div.keepconnected ul li h2 {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+div.keepconnected > ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+    div.keepconnected > ul li:hover h2 {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+
+
 
 
 
@@ -52,6 +103,7 @@ section{
 
 
 h1, h2, h3, h4, h5, h6{
+    color: white;
     margin-top: 0px;
     text-align: center;
 }
@@ -59,27 +111,36 @@ h1, h2, h3, h4, h5, h6{
 .welcome{
     background-color: black;
     color: #F0F0F0;
+    padding-top: 100px;
     position: relative;
-    z-index: 4;
+    
 }
+    .welcome footer{
+        background: -webkit-linear-gradient(black,  #FE5555); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(black,  #FE5555); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(black,  #FE5555); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(black,  #FE5555); /* Standard syntax */
+    
+    }
+
 
 .about{
-    background-color: #ff7f12;
+    background-color: #FE5555;
     color: #F0F0F0;
-    padding-top: 131px;
+    
 }
     .about footer{
-        background: -webkit-linear-gradient(#ff7f12, #25afff); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#ff7f12, #25afff); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#ff7f12, #25afff); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#ff7f12, #25afff); /* Standard syntax */
+        background: -webkit-linear-gradient(#FE5555, #25afff); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#FE5555, #25afff); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#FE5555, #25afff); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#FE5555, #25afff); /* Standard syntax */
     }
 
 
 .projects{
     background-color: #25afff;
     color: #F0F0F0;
-    padding-top: 131px;
+    padding-top: 15px;
 }
     .projects footer{
         background: -webkit-linear-gradient(#25afff, green); /* For Safari 5.1 to 6.0 */
@@ -91,6 +152,7 @@ h1, h2, h3, h4, h5, h6{
 .services{
     background-color: green;
     color: #F0F0F0;
+    padding-top: 15px;
 }
     .services footer{
         background: -webkit-linear-gradient(green, indigo); /* For Safari 5.1 to 6.0 */
@@ -102,6 +164,7 @@ h1, h2, h3, h4, h5, h6{
 .contact{
     background-color: indigo;
     color: #F0F0F0;
+    padding-top: 15px;
 }
 
 body{
@@ -126,11 +189,6 @@ img#badge{
     margin-left: auto;
     margin-right:auto;
 }
-
-
-
-
-
 
 p{
     margin-bottom: 0;
@@ -161,12 +219,11 @@ ul {
     z-index: 0;
 }
 
-li .active{
-    border-bottom: 2px solid white;
-    font-weight: bolder;
+li a.active{
+    border-bottom: 2px solid #FE5555;
 }
 
-/*.sectionfooter li{
+.sectionfooter li{
     display: inline;
     list-style-type: none;
     padding-right: 20px;
@@ -177,12 +234,25 @@ li .active{
     text-decoration: underline;
 }*/
 
+/*changing the default styles on button elements*/
+li button{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+button, .button {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+    button:hover, button:focus, .button:hover, .button:focus {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+
 li{
     list-style:none;
 }
 
 nav ul li a {
-	color: #00b22d;
+	color: #FFFFFF;
 	text-decoration: none;
 	-webkit-transition: background 0.3s ease-in-out;
 	-moz-transition: background 0.3s ease-in-out;
@@ -198,7 +268,9 @@ nav ul li a:hover {
 
 nav > ul > li > ul li {
 
+
 }
+
 
 nav > ul > li > ul li:hover {
 
@@ -229,10 +301,10 @@ nav > ul > li > ul {
     left: -40px;
 	position: absolute;
 	top: 32px;
-
 }
 
 nav > ul > li > ul > li {
+
     color: white;
 	position: relative;
 }
@@ -241,6 +313,43 @@ nav > ul > li > ul > li > a {
 	display: block;
 	padding: 20px 30px;
 
+	width: 100%;
+}
+
+nav ul li ul li h2 {
+    background-color: rgba(0, 0, 0, 0.0);
+	color: white;
+}
+
+nav > ul > li > ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+    nav > ul > li > ul li:hover h2 {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+nav > ul > li > ul > li:hover > ul {
+	display: block;
+}
+
+nav > ul > li > ul > li > ul {
+	background-color: rgba(0, 0, 0, 0.2);
+	display: none;
+    height: 500px;
+    left: 157px;
+	position: fixed;
+    top: 32px;
+    width: 220px;
+	
+}
+
+nav > ul > li > ul > li > ul > li {
+	color: white;
+	position: relative;
+}
+
+nav > ul > li > ul > li > ul > li > a {
+	display: block;
 	width: 125px;
 }
 
