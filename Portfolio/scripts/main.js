@@ -1,13 +1,14 @@
-﻿http://codetheory.in/change-active-state-links-sticky-navigation-scroll/
-
-var sections = $('section')
-  , nav = $('nav')
+﻿// Code written by: Rishabh
+// http://codetheory.in/change-active-state-links-sticky-navigation-scroll/
+var sections = $('section') //Assigning section elements to the section variable
+  , nav = $('nav') //Assigning nav elements to the section nav
+  , div = $('div') //Assigning div elements to the div variable
   , nav_height = nav.outerHeight();
 
-$(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
+$(window).on('scroll', function () { //When the window scrolls, do the following
+    var cur_pos = $(this).scrollTop(); 
 
-    sections.each(function () {
+    sections.each(function () { //For each section
         var top = $(this).offset().top - 131,
             bottom = top + $(this).outerHeight();
 
@@ -21,7 +22,20 @@ $(window).on('scroll', function () {
     });
 });
 
+/* This code crawls through my nav bar located in the header, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.*/
 nav.find('a').on('click', function () {
+    var $el = $(this)
+      , id = $el.attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 131
+    }, 500);
+
+    return false;
+});
+
+/* This code crawls through div elements, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.*/
+div.find('a').on('click', function () {
     var $el = $(this)
       , id = $el.attr('href');
 

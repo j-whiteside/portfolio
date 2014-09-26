@@ -1,4 +1,19 @@
-﻿header.top{
+﻿/*f************************************************************************
+    *   File name:      index.html
+    *   Author:         Jeremy Whiteside (200249654)
+    *   Website:        Jeremy Whiteside's portfolio (webdesign4.georgianc.on.ca/~200249654/portfolio/)
+    *   Description:    This is my personal portfolio that I made for assignment 1 in my advanced web dev class.
+    *                   It is a single-page website, and all navigation is handled through scrolling.
+    *                   I chose a single-page website over a multiple-paged website because I have not 
+    *                   made a single-page website before, and wanted to try my hand at it.  I learned some new things
+    *                   and think I pulled it off fairly well.  I started out with a very specific and defined idea of what I wanted
+    *                   my site to look like.  I ran into alot of problems along the way, and ended up making many small changes to my design,
+    *                   until I eventually settled on the current design.  The current design looks similar to my old design, but only if you squint
+    *                   and tilt your head about 30 degrees to the right.
+    **************************************************************************/
+
+/******************************* HEADER *********************************/
+header.top{
    /*
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2))); 
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)); 
@@ -41,52 +56,20 @@ ul#dropdown{
     width: 200px;
 }
 
-ul#dropdown li{
-    
-    
-}
-
 ul#additionallinks{
-    height: 620px;
+    height: 460px;
 }
-
-
-div.keepconnected{
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 0px 0px 0px 0px;
-    position: fixed;
-    right: 0px;
-    top: 65px;
-    width: 200px;
-}
-
-div.keepconnected ul{
-    margin-left: 0px;
-}
-
-div.keepconnected > ul > li{
-
-    color: white;
-	position: relative;
-}
-
-div.keepconnected > ul > li > a {
-    
-	display: block;
-	padding: 20px 30px;
-	width: 100%;
-}
-
-div.keepconnected ul li h2 {
-    background-color: rgba(0, 0, 0, 0.0);
-}
-
-div.keepconnected > ul li:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-    div.keepconnected > ul li:hover h2 {
-        background-color: rgba(0, 0, 0, 0.0);
+    ul#additionallinks > li > ul{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom-right-radius: 15px;
+        padding: 0px 5px;
     }
+        ul#additionallinks > li > ul > li:hover{
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+
+
 
 
 
@@ -108,6 +91,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+/******************************* WELCOME PAGE *********************************/
 .welcome{
     background-color: black;
     color: #F0F0F0;
@@ -123,10 +107,38 @@ h1, h2, h3, h4, h5, h6{
     
     }
 
+div.keepconnected{
+    height: 200px;
+}
+div.keepconnected ul{
+    background-color: rgba(256, 256, 256, 0.2);
+    margin-left: 0px;
+    width: 100%;
+}
+    div.keepconnected ul li{
+        text-align: center;
+    }
+        div.keepconnected ul li:hover{
+            background-color: rgba(256, 256, 256, 0.2);
+        }
+div.keepconnected h2{
+    background-color: rgba(256, 256, 256, 0.2);
+}
+    div.keepconnected h2 .underline{
+    text-decoration: underline;
+    }   
+
+
+/******************************* ABOUT PAGE *********************************/
+
+li a.active.aboutanchor{
+    border-bottom: 2px solid #FE5555;
+}
 
 .about{
     background-color: #FE5555;
     color: #F0F0F0;
+    padding-top: 15px;
     
 }
     .about footer{
@@ -137,6 +149,12 @@ h1, h2, h3, h4, h5, h6{
     }
 
 
+
+/******************************* PROJECTS PAGE *********************************/
+
+li a.active.projectsanchor{
+    border-bottom: 2px solid #25afff;
+}
 .projects{
     background-color: #25afff;
     color: #F0F0F0;
@@ -149,23 +167,35 @@ h1, h2, h3, h4, h5, h6{
         background: linear-gradient(#25afff, #FF944D); /* Standard syntax */
     }
 
+/******************************* SERVICES PAGE *********************************/
+
+li a.active.servicesanchor{
+    border-bottom: 2px solid #FF944D;
+}
 .services{
     background-color: #FF944D;
     color: #F0F0F0;
     padding-top: 15px;
 }
     .services footer{
-        background: -webkit-linear-gradient(#FF944D, indigo); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#FF944D, indigo); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient#FF944D, indigo); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#FF944D, indigo); /* Standard syntax */
+        background: -webkit-linear-gradient(#FF944D, #71CC57); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#FF944D, #71CC57); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient#FF944D, #71CC57); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#FF944D, #71CC57); /* Standard syntax */
     }
 
+/******************************* CONTACT ME PAGE *********************************/
+
+li a.active.contactanchor{
+    border-bottom: 2px solid #71CC57;
+}
 .contact{
-    background-color: indigo;
+    background-color: #71CC57;
     color: #F0F0F0;
     padding-top: 15px;
 }
+
+/******************************* GENERAL STYLING *********************************/
 
 body{
     height: 5000px;
@@ -210,16 +240,13 @@ ul {
     height: 100px;
     position: relative;
     bottom: -20px;
+
 }
 
 
 
 .columns{
     z-index: 0;
-}
-
-li a.active{
-    border-bottom: 2px solid #FE5555;
 }
 
 .sectionfooter ul{
@@ -384,7 +411,3 @@ nav > ul > li > ul > li > ul > li > a {
 	position: absolute;
 }*/
 
-div#featuredwork{
-    margin-left: auto;
-    margin-right: auto;
-}
