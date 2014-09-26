@@ -143,22 +143,22 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 15px;
 }
     .projects footer{
-        background: -webkit-linear-gradient(#25afff, green); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#25afff, green); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#25afff, green); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#25afff, green); /* Standard syntax */
+        background: -webkit-linear-gradient(#25afff, #FF944D); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#25afff, #FF944D); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#25afff, #FF944D); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#25afff, #FF944D); /* Standard syntax */
     }
 
 .services{
-    background-color: green;
+    background-color: #FF944D;
     color: #F0F0F0;
     padding-top: 15px;
 }
     .services footer{
-        background: -webkit-linear-gradient(green, indigo); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(green, indigo); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradientgreen, indigo); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(green, indigo); /* Standard syntax */
+        background: -webkit-linear-gradient(#FF944D, indigo); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#FF944D, indigo); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient#FF944D, indigo); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#FF944D, indigo); /* Standard syntax */
     }
 
 .contact{
@@ -207,7 +207,6 @@ ul {
 }
 
 .sectionfooter{
-    border-top: 2px dotted #666;
     height: 100px;
     position: relative;
     bottom: -20px;
@@ -223,16 +222,22 @@ li a.active{
     border-bottom: 2px solid #FE5555;
 }
 
+.sectionfooter ul{
+    margin-left: auto;
+    margin-right: auto;
+
+}
 .sectionfooter li{
-    display: inline;
     list-style-type: none;
     padding-right: 20px;
+
 }
 
 .sectionfooter li a{
     color: white;
     text-decoration: underline;
-}*/
+
+}*
 
 /*changing the default styles on button elements*/
 li button{
@@ -334,9 +339,10 @@ nav > ul > li > ul > li:hover > ul {
 
 nav > ul > li > ul > li > ul {
 	background-color: rgba(0, 0, 0, 0.2);
+    border-left: dotted rgba(0, 0, 0, 0.2) 2px;
 	display: none;
     height: 500px;
-    left: 157px;
+    left: 94px;
 	position: fixed;
     top: 32px;
     width: 220px;
@@ -346,6 +352,7 @@ nav > ul > li > ul > li > ul {
 nav > ul > li > ul > li > ul > li {
 	color: white;
 	position: relative;
+    top: 50px;
 }
 
 nav > ul > li > ul > li > ul > li > a {
@@ -376,3 +383,8 @@ nav > ul > li > ul > li > ul > li > a {
 .followMeBar.fixed.absolute{
 	position: absolute;
 }*/
+
+div#featuredwork{
+    margin-left: auto;
+    margin-right: auto;
+}

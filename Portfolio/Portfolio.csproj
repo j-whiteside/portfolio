@@ -105,6 +105,7 @@
     <Content Include="images\logos\mvBackground.jpg" />
     <Content Include="images\logos\mvBackground.png" />
     <Content Include="images\mail.png" />
+    <Content Include="images\map.png" />
     <Content Include="images\menu.png" />
     <Content Include="images\phone.png" />
     <Content Include="images\soundcloud.png" />
