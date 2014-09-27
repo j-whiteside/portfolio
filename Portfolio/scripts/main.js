@@ -1,44 +1,62 @@
-﻿// Code written by: Rishabh
+﻿/*************************************************************************
+*   File name:      main.js
+*   Author:         Jeremy Whiteside (200249654)
+*   Website:        Jeremy Whiteside's portfolio (webdesign4.georgianc.on.ca/~200249654/portfolio/)
+*   Description:    This is the main script sheet for my portfolio website.  None of the code was written
+*                   by me from scratch, but I modified all to fit my needs.
+**************************************************************************/
+
+// Code written by: Rishabh
 // http://codetheory.in/change-active-state-links-sticky-navigation-scroll/
+//This code originally looked for anchors in the nav that correspond to ids in the section elements.
+//I changed it so that it also looks through divs and footer elements, and link them to the appropriate sections aswell.
+//I also added an offset to the scrolling, so that elements are not scrolled to, then hidden under my nav bar.
 var sections = $('section') //Assigning section elements to the section variable
-  , nav = $('nav') //Assigning nav elements to the section nav
+  , nav = $('nav') //Assigning nav elements to the nav variable
   , div = $('div') //Assigning div elements to the div variable
+  , footer = $('footer') //Assigning footer elements to the footer variable
   , nav_height = nav.outerHeight();
 
-$(window).on('scroll', function () { //When the window scrolls, do the following
+//When the window scrolls, do the following
+$(window).on('scroll', function () { 
     var cur_pos = $(this).scrollTop(); 
 
-    sections.each(function () { //For each section
+    //Set the coordinates for the top and bottom of each section
+    sections.each(function () { 
         var top = $(this).offset().top - 131,
             bottom = top + $(this).outerHeight();
 
+        //If the screen is below the current element, taking into consideration the offset
         if (cur_pos >= top - 131 && cur_pos <= bottom) {
-            nav.find('a').removeClass('active');
+            nav.find('a').removeClass('active'); //Remove 'active' class from the currently active nav link
             sections.removeClass('active');
 
-            $(this).addClass('active');
+            //Add the active class to activate highliting under the currently active nav link
+            $(this).addClass('active'); 
             nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-        }
+        } //End of if
     });
 });
 
-/* This code crawls through my nav bar located in the header, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.*/
+// This code crawls through my nav bar located in the header, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.
 nav.find('a').on('click', function () {
     var $el = $(this)
       , id = $el.attr('href');
 
+    //Scroll the body element to reach the desired section, with a duration of 500ms
     $('html, body').animate({
-        scrollTop: $(id).offset().top - 131
+        scrollTop: $(id).offset().top - 131 
     }, 500);
 
     return false;
 });
 
-/* This code crawls through div elements, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.*/
+// This code crawls through div elements, finds any href that correspond to the id on another element, and allows smooth scrolling navigation between elements.
 div.find('a').on('click', function () {
     var $el = $(this)
       , id = $el.attr('href');
 
+    //Scroll the body element to reach the desired section, with a duration of 500ms
     $('html, body').animate({
         scrollTop: $(id).offset().top - 131
     }, 500);
@@ -46,7 +64,24 @@ div.find('a').on('click', function () {
     return false;
 });
 
+// This code crawls through the footers, to find the "back to top" link, and smoothly scrolls back to the top of the page.
+footer.find('a').on('click', function () {
+    var $el = $(this)
+      , id = $el.attr('href');
+
+    //Scroll the body element to reach the desired section, with a duration of 500ms
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - 131
+    }, 500);
+
+    return false;
+});
+
+
+
 /*Adjusting the foundation 5 slider settings*/
+http://foundation.zurb.com/docs/components/orbit.html
+/*Code supplied by foundation 5 docs, settings tuned to my liking*/
 $(document).foundation({
     orbit: {
         animation: 'slide', // Sets the type of animation used for transitioning between slides, can also be 'fade'
@@ -80,7 +115,5 @@ $(document).foundation({
         timer: true, // Does the slider have a timer active? Setting to false disables the timer.
         variable_height: false, // Does the slider have variable height content?
         swipe: true,
-        before_slide_change: noop, // Execute a function before the slide changes
-        after_slide_change: noop // Execute a function after the slide changes
     }
 });

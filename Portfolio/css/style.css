@@ -1,16 +1,11 @@
-﻿/*f************************************************************************
-    *   File name:      index.html
-    *   Author:         Jeremy Whiteside (200249654)
-    *   Website:        Jeremy Whiteside's portfolio (webdesign4.georgianc.on.ca/~200249654/portfolio/)
-    *   Description:    This is my personal portfolio that I made for assignment 1 in my advanced web dev class.
-    *                   It is a single-page website, and all navigation is handled through scrolling.
-    *                   I chose a single-page website over a multiple-paged website because I have not 
-    *                   made a single-page website before, and wanted to try my hand at it.  I learned some new things
-    *                   and think I pulled it off fairly well.  I started out with a very specific and defined idea of what I wanted
-    *                   my site to look like.  I ran into alot of problems along the way, and ended up making many small changes to my design,
-    *                   until I eventually settled on the current design.  The current design looks similar to my old design, but only if you squint
-    *                   and tilt your head about 30 degrees to the right.
-    **************************************************************************/
+﻿/*************************************************************************
+*   File name:      style.css
+*   Author:         Jeremy Whiteside (200249654)
+*   Website:        Jeremy Whiteside's portfolio (webdesign4.georgianc.on.ca/~200249654/portfolio/)
+*   Description:    This is the main style sheet for my portfolio website.  All code
+*                   is written by me.  The way it is formatted might be a bit confusing,
+*                   but it is the only way I can remember what does what and where things are.
+**************************************************************************/
 
 /******************************* HEADER *********************************/
 header.top{
@@ -33,6 +28,9 @@ nav#scroll{
     text-align: center;
 }
 
+nav#scroll #mainnav li {
+    margin-left: 0px;
+}
 nav#scroll #mainnav a{
     bottom: -60px;
     color: white;
@@ -51,8 +49,9 @@ ul#mainnav a img#logo{
 }
 
 ul#dropdown{
-    top: 40px;
+    color: white;
     position: fixed;
+    top: 40px;
     width: 200px;
 }
 
@@ -60,7 +59,7 @@ ul#additionallinks{
     height: 460px;
 }
     ul#additionallinks > li > ul{
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         border-bottom-right-radius: 15px;
         padding: 0px 5px;
     }
@@ -68,28 +67,100 @@ ul#additionallinks{
             background-color: rgba(0, 0, 0, 0.0);
         }
 
+li button{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+/*changing the default styles on button elements*/
+button, .button {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+    button:hover, button:focus, .button:hover, .button:focus {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
 
 
+li{
+    list-style:none;
+}
 
-
-
-
-
-
-
-
-section{
-    
-    margin-bottom: 0px;
-    padding-bottom: 20px;
+nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
 }
 
 
-h1, h2, h3, h4, h5, h6{
+
+nav > ul > li {
+	float: left;
+	position: relative;
+}
+
+nav > ul > li > a {
+	position: relative;
+	float: left;
+}
+
+nav > ul > li:hover > ul {
+	display: block;
+}
+
+nav > ul > li > ul {
+    background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+    left: -40px;
+	position: absolute;
+	top: 32px;
+}
+
+nav > ul > li > ul > li {
+
     color: white;
-    margin-top: 0px;
-    text-align: center;
+	position: relative;
 }
+
+nav > ul > li > ul > li > a {
+	display: block;
+	padding: 20px 30px;
+
+	width: 100%;
+}
+
+nav > ul > li > ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Privacy policy and terms of use dropdown menu*/
+nav > ul > li > ul > li:hover > ul {
+	display: block;
+}
+
+nav > ul > li > ul > li > ul {
+	background-color: rgba(0, 0, 0, 0.2);
+    border-left: dotted rgba(0, 0, 0, 0.2) 2px;
+	display: none;
+    height: 500px;
+    left: 94px;
+	position: fixed;
+    top: 32px;
+    width: 220px;
+	
+}
+
+nav > ul > li > ul > li > ul > li {
+	color: white;
+	position: relative;
+    top: 50px;
+}
+    
+
+
 
 /******************************* WELCOME PAGE *********************************/
 .welcome{
@@ -107,24 +178,43 @@ h1, h2, h3, h4, h5, h6{
     
     }
 
-div.keepconnected{
+div.getconnected{
     height: 200px;
 }
-div.keepconnected ul{
+div.getconnected ul{
     background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 0px 0px 10px 10px;
     margin-left: 0px;
     width: 100%;
 }
-    div.keepconnected ul li{
+    div.getconnected ul li{
         text-align: center;
     }
-        div.keepconnected ul li:hover{
+        div.getconnected ul li a{
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+    div.getconnected ul li#calltoaction{
+        background: #ff2828; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #50E5FF 0%, #ff2828 4%, #50E5FF 8%, #ff2828 12%, #50E5FF 16%, #ff2828 20%, #50E5FF 24%, #ff2828 28%, #50E5FF 32%, #ff2828 36%, #50E5FF 40%, #ff2828 44%, #50E5FF 48%, #ff2828 52%, #50E5FF 56%, #ff2828 60%, #50E5FF 64%, #ff2828 68%, #50E5FF 72%, #ff2828 76%, #50E5FF 80%, #ff2828 84%, #50E5FF 88%, #ff2828 92%, #50E5FF 96%, #ff2828 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#50E5FF), color-stop(4%,#ff2828), color-stop(8%,#50E5FF), color-stop(12%,#ff2828), color-stop(16%,#50E5FF), color-stop(20%,#ff2828), color-stop(24%,#50E5FF), color-stop(28%,#ff2828), color-stop(32%,#50E5FF), color-stop(36%,#ff2828), color-stop(40%,#50E5FF), color-stop(44%,#ff2828), color-stop(48%,#50E5FF), color-stop(52%,#ff2828), color-stop(56%,#50E5FF), color-stop(60%,#ff2828), color-stop(64%,#50E5FF), color-stop(68%,#ff2828), color-stop(72%,#50E5FF), color-stop(76%,#ff2828), color-stop(80%,#50E5FF), color-stop(84%,#ff2828), color-stop(88%,#50E5FF), color-stop(92%,#ff2828), color-stop(96%,#50E5FF), color-stop(100%,#ff2828)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* IE10+ */
+        background: linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* W3C */
+    }
+    div.getconnected ul li#calltoaction a{
+        font-weight: bolder;
+    }
+        div.getconnected ul li:hover{
             background-color: rgba(256, 256, 256, 0.2);
         }
-div.keepconnected h2{
+div.getconnected h3{
     background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 10px 10px 0px 0px;
 }
-    div.keepconnected h2 .underline{
+    div.getconnected h3 .underline{
     text-decoration: underline;
     }   
 
@@ -194,25 +284,54 @@ li a.active.contactanchor{
     color: #F0F0F0;
     padding-top: 15px;
 }
+    .contact footer{
+        background: -webkit-linear-gradient(#71CC57,  black); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#71CC57,  black); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#71CC57,  black); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#71CC57,  black); /* Standard syntax */
+    
+    }
 
+
+
+/******************************* MAIN FOOTER *********************************/
+
+footer#mainfooter{
+    background-color: black;
+}
+    footer#mainfooter ul{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+footer#mainfooter div div{
+    color: #D4D4D4;
+}
 /******************************* GENERAL STYLING *********************************/
 
-body{
-    height: 5000px;
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+    margin-top: 0px;
+    text-align: center;
 }
-
-
+h2{
+    font-size: medium;
+    font-style: italic;
+}
 
 main section header{
     margin-top: 0px;
 }
 
-
-section header{
-    margin: 100px 0px 70px 0px;
+section{
+    
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
-
-
+    section header{
+        margin: 100px 0px 70px 0px;
+    }
 
 img#badge{
     display: block;
@@ -243,8 +362,6 @@ ul {
 
 }
 
-
-
 .columns{
     z-index: 0;
 }
@@ -266,148 +383,4 @@ ul {
 
 }*
 
-/*changing the default styles on button elements*/
-li button{
-    margin-bottom: auto;
-    margin-top: auto;
-}
-button, .button {
-    background-color: rgba(0, 0, 0, 0.0);
-}
-    button:hover, button:focus, .button:hover, .button:focus {
-        background-color: rgba(0, 0, 0, 0.0);
-    }
-
-
-li{
-    list-style:none;
-}
-
-nav ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	-ms-transition: background 0.3s ease-in-out;
-	-o-transition: background 0.3s ease-in-out;
-	transition: background 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-
-}
-
-
-nav > ul > li > ul li {
-
-
-}
-
-
-nav > ul > li > ul li:hover {
-
-}
-
-
-nav > ul > li {
-	float: left;
-	position: relative;
-}
-
-nav > ul > li > a {
-	position: relative;
-	float: left;
-}
-
-nav > ul > li:hover {
-
-}
-
-nav > ul > li:hover > ul {
-	display: block;
-}
-
-nav > ul > li > ul {
-    background-color: rgba(0, 0, 0, 0.2);
-	display: none;
-    left: -40px;
-	position: absolute;
-	top: 32px;
-}
-
-nav > ul > li > ul > li {
-
-    color: white;
-	position: relative;
-}
-
-nav > ul > li > ul > li > a {
-	display: block;
-	padding: 20px 30px;
-
-	width: 100%;
-}
-
-nav ul li ul li h2 {
-    background-color: rgba(0, 0, 0, 0.0);
-	color: white;
-}
-
-nav > ul > li > ul li:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-    nav > ul > li > ul li:hover h2 {
-        background-color: rgba(0, 0, 0, 0.0);
-    }
-
-nav > ul > li > ul > li:hover > ul {
-	display: block;
-}
-
-nav > ul > li > ul > li > ul {
-	background-color: rgba(0, 0, 0, 0.2);
-    border-left: dotted rgba(0, 0, 0, 0.2) 2px;
-	display: none;
-    height: 500px;
-    left: 94px;
-	position: fixed;
-    top: 32px;
-    width: 220px;
-	
-}
-
-nav > ul > li > ul > li > ul > li {
-	color: white;
-	position: relative;
-    top: 50px;
-}
-
-nav > ul > li > ul > li > ul > li > a {
-	display: block;
-	width: 125px;
-}
-
-/* STICKY HEADERS CSS
-
- .followWrap{
-    background-color: cyan;
-}
-
-.followMeBar{
-	padding: 1%;
-    color: white;
-    min-height: 132px;
-	position: relative;
-	z-index: 2;
-}
-.followMeBar.fixed{
-    min-height: 132px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-}
-.followMeBar.fixed.absolute{
-	position: absolute;
-}*/
 

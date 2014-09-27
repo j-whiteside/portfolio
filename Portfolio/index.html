@@ -36,9 +36,9 @@
     <header class="top">
         <nav id="scroll">
 
-            <ul id="dropdown">
+            <ul id="dropdown" class="show-for-medium-up">
                 <li>
-                    <span><img src="images/arrow-down.png" /></span>
+                    <span ><img src="images/menu.png" /></span>
                     <ul id="additionallinks">
                         <li><button id="privacypolicy">Privacy Policy</button>
                             <ul>
@@ -64,11 +64,11 @@
                 </li>
             </ul>
             <ul id="mainnav" class="inline-list">
-                <li><a class="aboutanchor" href="#about">About me</a></li>
-                <li><a class="projectsanchor" href="#projects">Projects</a></li>
+                <li><a class="aboutanchor" href="#about"><span class="hide-for-medium-up"><img src="images/profile.png" /></span><span class="show-for-medium-up">About me</span></a></li>
+                <li><a class="projectsanchor" href="#projects"><span class="hide-for-medium-up"><img src="images/lab.png" /></span><span class="show-for-medium-up">Projects</span></a></li>
                 <li><a href="#welcome"><img src="images/logos/JW Badge header shadow.png" alt="Jeremy Whiteside's badge" id="logo" width="120" height="120" /></a></li>
-                <li><a class="servicesanchor" href="#services">Services</a></li>
-                <li><a class="contactanchor" href="#contact">Contact me</a></li>
+                <li><a class="servicesanchor" href="#services"><span class="hide-for-medium-up"><img src="images/wrench.png" /></span><span class="hide-for-medium-up"></span><span class="show-for-medium-up">Services</span></a></li>
+                <li><a class="contactanchor" href="#contact"><span class="hide-for-medium-up"><img src="images/address-book.png" /></span><span class="show-for-medium-up">Contact me</span></a></li>
             </ul>
         </nav>
     </header>
@@ -80,13 +80,12 @@
             <header class="welcome">
                 <img src="images/logos/JW Badge v2.png" alt="Jeremy Whiteside's badge" width="500" height="500" id="badge"/>
                 <h1>Welcome to my site</h1>
-                <h2>Header 2</h2>
+                <h2>Gotta code it all</h2>
             </header>
             <div class="row">
-                <div class="large-9 medium-9 small-9 columns" >
+                <div class="large-9 large-uncentered medium-8 medium-uncentered small-9 small-centered columns" >
                     <p>
-                        Hello, my name is Jeremy Whiteside, and this is my personal website!  Feel free to explore, and stay as long as you want!
-                        <br />The privacy policy 
+                        Hello, my name is Jeremy Whiteside, and this is my personal website!  <br />Feel free to explore, and stay as long as you want!
                     </p>
                     <p>
                         I want to be the very best, like no one ever was.
@@ -96,21 +95,21 @@
                     </p>
 
                 </div>
-                <div class="large-3 columns keepconnected show-for-xlarge-up">
-                    <h2>Keep <span class="underline">Connected</span></h2>
+                <div class="large-3 medium-4 columns getconnected show-for-medium-up">
+                    <h3>Get<br /> <span class="underline">Connected</span></h3>
                     <ul >
                         <li><a class="button" target="_blank" href="https://github.com/j-whiteside"><img src="images/github.png" /></a></li>
                         <li><a class="button" target="_blank" href="https://www.facebook.com/jeremy.whiteside.39"><img src="images/facebook.png" /></a></li>
                         <li><a class="button" href="mailto:whiteside.jeremy@gmail.com"><img src="images/mail.png" /></a></li>
                         <li><a class="button" href="tel:705-309-1600"><img src="images/phone.png" /></a></li>
-                        <li><a class="button" href="#contact"><img src="images/phone.png" /></a></li>
+                        <li id="calltoaction"><a class="button" href="#projects">CALL TO ACTION</a></li>
                     </ul>
                 </div>
                 
             </div>
 
             <div class="row">
-                <div id="featuredwork" class="large-9 medium-6 small-12">
+                <div id="featuredwork" class="large-9 large-uncentered medium-8 medium-uncentered small-9 small-centered columns">
                     <ul data-orbit>
                         <li>
                             <a target="_blank" href="http://webdesign4.georgianc.on.ca/~200249654/milleyvolts/index.html"><img src="http://placehold.it/750x400" alt="slide 1"></a>
@@ -120,10 +119,10 @@
                         </li>
                         <li>
                             <a target="_blank" href=""><img src="http://placehold.it/750x400" alt="slide 2"></a>
-                                <div class="orbit-caption">
-                                    Arduino keyboard
-                                </div>
-</li>
+                            <div class="orbit-caption">
+                                Arduino keyboard
+                            </div>
+                        </li>
                         <li>
                             <a target="_blank" href="http://webdesign4.georgianc.on.ca/~200249654/ipman/"><img src="http://placehold.it/750x400" alt="slide 3"></a>
                             <div class="orbit-caption">
@@ -137,7 +136,7 @@
             <footer class="sectionfooter">
                 <ul class="inline-list centered ">
                     <li><a href="#welcome">Back to top</a></li>
-                    <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
+                    <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
                 </ul>
             </footer>
         </section>
@@ -155,17 +154,8 @@
 
                 <div class="large-9 medium-6 columns">
                     <p>
-                        <q>I want to be the very best, like no one ever was.  
-                        To write code is my real test, compiling is my cause.  
-                        I will travel across the web, searching far and wide; 
-                        teaching myself to understand the java API. Gotta code it all.</q>
-                        <br />-JW
-                    </p>
-                    <p>
                         <a href="https://www.biblegateway.com/passage/?search=Luke+6:31"><q>Do to others as you would have them do to you</q></a> is my motto in life.  Jesus was the greatest teacher, and I strive to be like him.  For this reason, I live to help others. Helping people gives me a feeling of satisfaction that nothing else can.
-                    </p>
-                    <p>
-                        I want to make the world a better place.  While I probably won&#39t find a cure for a disease, or end any wars in my lifetime, I am certain that I will have made a positive difference in many people&#39s lives.  When I die I safely say that I contributed to society and didn&#39t make any enemies.
+                        Through helping people, I want to make the world a better place.  While I probably won&#39t find a cure for a disease, or end any wars in my lifetime, I am certain that I will have made a positive difference in many people&#39s lives.  When I die I safely say that I contributed to society and didn&#39t make any enemies.
                     </p>
                     <p>
                         Finding creative solutions to problems also brings me much satisfaction.  I have always loved building things, solving puzzles, and math.  Programming combines these three activities.  I am thankful that I can pursue something that brings me happiness as a career, and am fortunate enough to have discovered it early
@@ -182,7 +172,7 @@
             <footer class="sectionfooter">
                 <ul class="inline-list  ">
                     <li><a href="#welcome">Back to top</a></li>
-                    <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
+                    <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
                 </ul>
             </footer>
         </section>
@@ -205,7 +195,7 @@
             <footer class="sectionfooter">
                 <ul class="inline-list  ">
                     <li><a href="#welcome">Back to top</a></li>
-                    <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
+                    <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
                 </ul>
             </footer>
         </section>
@@ -233,7 +223,7 @@
             <footer class="sectionfooter">
                 <ul class="inline-list  ">
                     <li><a href="#welcome">Back to top</a></li>
-                    <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
+                    <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
                 </ul>
             </footer>
         </section>
@@ -261,22 +251,35 @@
             <footer class="sectionfooter">
                 <ul class="inline-list  ">
                     <li><a href="#welcome">Back to top</a></li>
-                    <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
+                    <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
                 </ul>
             </footer>
         </section>
     </main>
 
-    <div>
-        <footer class="mainfooter">
-            <ul class="inline-list  ">
-                <li><a href="privacy.html">Privacy policy</a></li>
-                <li><a href="terms.html">Terms of use</a></li>
-                <li><a href="#welcome">Back to top</a></li>
-                <li><small class="rightside">Jeremy Whiteside &copy; 2014.</small></li>
-            </ul>
-        </footer>
-    </div>
+    <footer id="mainfooter">
+        <div class="row hide-for-medium-up">
+            <div id="privacypolicy" class="small-6 columns">
+                <h2>Privacy Policy</h2>
+                <p>
+                    No information is collected from visitors to this website, other than that which is communicated through email or telephone contact.
+                    Email addresses and phone numbers will be collected after contacting me through the links in the &#34 Keep Connected&#34 panel to facilitate communication
+                </p>
+            </div>
+            <div id="termsofuse" class="small-6 columns">
+                <h2>Terms of use</h2>
+                <p>
+                    This website, source code, and design all belong to Jeremy Whiteside.
+                    You are not permitted to use code from this website, however it may be used as a reference for your own website.
+                    By visiting this website, you agree to these terms.
+                </p>
+            </div>
+        </div>
+        <ul class="inline-list  ">
+            <li><a href="#welcome">Back to top</a></li>
+            <li><small class="rightside">Jeremy Whiteside &copy; 2014. All Rights Reserved</small></li>
+        </ul>
+    </footer>
     <!-- Scripts -->
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/foundation/foundation.js"></script>
