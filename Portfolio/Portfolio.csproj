@@ -81,6 +81,7 @@
     <Content Include="images\github.png" />
     <Content Include="images\mail.png" />
     <Content Include="images\menu.png" />
+    <Content Include="images\milleyvolts.png" />
     <Content Include="images\phone.png" />
     <Content Include="images\profile.png" />
     <Content Include="images\wrench.png" />

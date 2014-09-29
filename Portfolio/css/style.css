@@ -178,29 +178,29 @@ nav > ul > li > ul > li > ul > li {
     
     }
 
-section#welcome div.getconnected{
+section#welcome aside.getconnected{
     height: 200px;
 }
-    section#welcome div.getconnected h3{
+    section#welcome aside.getconnected h3{
         background-color: rgba(256, 256, 256, 0.2);
         border-radius: 10px 10px 0px 0px;
     }
-        section#welcome div.getconnected h3 .underline{
+        section#welcome aside.getconnected h3 .underline{
         text-decoration: underline;
         }   
-section#welcome div.getconnected ul{
+section#welcome aside.getconnected ul{
     background-color: rgba(256, 256, 256, 0.2);
     border-radius: 0px 0px 10px 10px;
     margin-left: 0px;
     width: 100%;
 }
-    section#welcome div.getconnected ul li{
+    section#welcome aside.getconnected ul li{
         text-align: center;
     }
-    section#welcome div.getconnected ul li:hover{
+    section#welcome aside.getconnected ul li:hover{
             background-color: rgba(256, 256, 256, 0.2);
     }
-        section#welcome div.getconnected ul li a{
+        section#welcome aside.getconnected ul li a{
             margin-bottom: 15px;
             margin-top: 15px;
         }
@@ -287,6 +287,13 @@ li a.active.servicesanchor{
         background: linear-gradient(#FF944D, #71CC57); /* Standard syntax */
     }
 
+section#services div.row div{
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    margin: 5px 0px;
+    padding: 15px 15px 15px 15px;
+}
+
 /******************************* CONTACT ME PAGE *********************************/
 
 .contact a{
@@ -362,6 +369,7 @@ section#contact #calltoaction{
 section#contact #calltoaction a{
     color: #3B3B3B;
     font-weight: 900;
+    margin-bottom: 5px;
 }
 
 /******************************* MAIN FOOTER *********************************/
@@ -461,6 +469,6 @@ ul {
     color: white;
     text-decoration: underline;
 
-}*
+}
 
 
