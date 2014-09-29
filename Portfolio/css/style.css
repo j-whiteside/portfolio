@@ -178,45 +178,50 @@ nav > ul > li > ul > li > ul > li {
     
     }
 
-div.getconnected{
+section#welcome div.getconnected{
     height: 200px;
 }
-div.getconnected ul{
+    section#welcome div.getconnected h3{
+        background-color: rgba(256, 256, 256, 0.2);
+        border-radius: 10px 10px 0px 0px;
+    }
+        section#welcome div.getconnected h3 .underline{
+        text-decoration: underline;
+        }   
+section#welcome div.getconnected ul{
     background-color: rgba(256, 256, 256, 0.2);
     border-radius: 0px 0px 10px 10px;
     margin-left: 0px;
     width: 100%;
 }
-    div.getconnected ul li{
+    section#welcome div.getconnected ul li{
         text-align: center;
     }
-        div.getconnected ul li a{
+    section#welcome div.getconnected ul li:hover{
+            background-color: rgba(256, 256, 256, 0.2);
+    }
+        section#welcome div.getconnected ul li a{
             margin-bottom: 15px;
             margin-top: 15px;
         }
 
-    div.getconnected ul li#calltoaction{
-        background: #ff2828; /* Old browsers */
-        background: -moz-linear-gradient(45deg, #50E5FF 0%, #ff2828 4%, #50E5FF 8%, #ff2828 12%, #50E5FF 16%, #ff2828 20%, #50E5FF 24%, #ff2828 28%, #50E5FF 32%, #ff2828 36%, #50E5FF 40%, #ff2828 44%, #50E5FF 48%, #ff2828 52%, #50E5FF 56%, #ff2828 60%, #50E5FF 64%, #ff2828 68%, #50E5FF 72%, #ff2828 76%, #50E5FF 80%, #ff2828 84%, #50E5FF 88%, #ff2828 92%, #50E5FF 96%, #ff2828 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#50E5FF), color-stop(4%,#ff2828), color-stop(8%,#50E5FF), color-stop(12%,#ff2828), color-stop(16%,#50E5FF), color-stop(20%,#ff2828), color-stop(24%,#50E5FF), color-stop(28%,#ff2828), color-stop(32%,#50E5FF), color-stop(36%,#ff2828), color-stop(40%,#50E5FF), color-stop(44%,#ff2828), color-stop(48%,#50E5FF), color-stop(52%,#ff2828), color-stop(56%,#50E5FF), color-stop(60%,#ff2828), color-stop(64%,#50E5FF), color-stop(68%,#ff2828), color-stop(72%,#50E5FF), color-stop(76%,#ff2828), color-stop(80%,#50E5FF), color-stop(84%,#ff2828), color-stop(88%,#50E5FF), color-stop(92%,#ff2828), color-stop(96%,#50E5FF), color-stop(100%,#ff2828)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* IE10+ */
-        background: linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* W3C */
-    }
-    div.getconnected ul li#calltoaction a{
-        font-weight: bolder;
-    }
-        div.getconnected ul li:hover{
-            background-color: rgba(256, 256, 256, 0.2);
-        }
-div.getconnected h3{
-    background-color: rgba(256, 256, 256, 0.2);
-    border-radius: 10px 10px 0px 0px;
+section#welcome div#featuredwork{
+    margin-bottom: 7px;
 }
-    div.getconnected h3 .underline{
-    text-decoration: underline;
-    }   
+section#welcome #calltoaction{
+    background: #ff2828; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #50E5FF 0%, #ff2828 4%, #50E5FF 8%, #ff2828 12%, #50E5FF 16%, #ff2828 20%, #50E5FF 24%, #ff2828 28%, #50E5FF 32%, #ff2828 36%, #50E5FF 40%, #ff2828 44%, #50E5FF 48%, #ff2828 52%, #50E5FF 56%, #ff2828 60%, #50E5FF 64%, #ff2828 68%, #50E5FF 72%, #ff2828 76%, #50E5FF 80%, #ff2828 84%, #50E5FF 88%, #ff2828 92%, #50E5FF 96%, #ff2828 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#50E5FF), color-stop(4%,#ff2828), color-stop(8%,#50E5FF), color-stop(12%,#ff2828), color-stop(16%,#50E5FF), color-stop(20%,#ff2828), color-stop(24%,#50E5FF), color-stop(28%,#ff2828), color-stop(32%,#50E5FF), color-stop(36%,#ff2828), color-stop(40%,#50E5FF), color-stop(44%,#ff2828), color-stop(48%,#50E5FF), color-stop(52%,#ff2828), color-stop(56%,#50E5FF), color-stop(60%,#ff2828), color-stop(64%,#50E5FF), color-stop(68%,#ff2828), color-stop(72%,#50E5FF), color-stop(76%,#ff2828), color-stop(80%,#50E5FF), color-stop(84%,#ff2828), color-stop(88%,#50E5FF), color-stop(92%,#ff2828), color-stop(96%,#50E5FF), color-stop(100%,#ff2828)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* IE10+ */
+    background: linear-gradient(45deg, #50E5FF 0%,#ff2828 4%,#50E5FF 8%,#ff2828 12%,#50E5FF 16%,#ff2828 20%,#50E5FF 24%,#ff2828 28%,#50E5FF 32%,#ff2828 36%,#50E5FF 40%,#ff2828 44%,#50E5FF 48%,#ff2828 52%,#50E5FF 56%,#ff2828 60%,#50E5FF 64%,#ff2828 68%,#50E5FF 72%,#ff2828 76%,#50E5FF 80%,#ff2828 84%,#50E5FF 88%,#ff2828 92%,#50E5FF 96%,#ff2828 100%); /* W3C */
+}
+section#welcome #calltoaction a{
+    font-weight: bolder;
+}
+        
+
 
 
 /******************************* ABOUT PAGE *********************************/
@@ -242,7 +247,7 @@ li a.active.aboutanchor{
 
 /******************************* PROJECTS PAGE *********************************/
 
-li a.active.projectsanchor{
+section#projects li a.active.projectsanchor{
     border-bottom: 2px solid #25afff;
 }
 .projects{
@@ -256,6 +261,14 @@ li a.active.projectsanchor{
         background: -moz-linear-gradient(#25afff, #FF944D); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#25afff, #FF944D); /* Standard syntax */
     }
+section#projects div#modals{
+    background-color: rgba(256, 256, 256, 0.4);
+    min-height: 200px;
+    padding: 30px 10px;
+}
+section#projects div.reveal-modal{
+    color: white;
+}
 
 /******************************* SERVICES PAGE *********************************/
 
@@ -276,12 +289,28 @@ li a.active.servicesanchor{
 
 /******************************* CONTACT ME PAGE *********************************/
 
+.contact a{
+    color: #6E0000;
+    text-decoration: underline;
+}
+.contact p{
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+    padding: 15px 0px 7px 5px;
+    width: 100%;
+}
+
+.contactinfotitle{
+    font-size: larger;
+    text-decoration: underline;
+}
 li a.active.contactanchor{
     border-bottom: 2px solid #71CC57;
 }
 .contact{
     background-color: #71CC57;
-    color: #F0F0F0;
+    color: #3B3B3B;
     padding-top: 15px;
 }
     .contact footer{
@@ -292,7 +321,48 @@ li a.active.contactanchor{
     
     }
 
+section#contact div div div#contactinfo{
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 15px 5px 15px;
+}
+    section#contact div div h3{
+        background-color: rgba(256, 256, 256, 0.2);
+        border-radius: 10px 10px 0px 0px;
+    }
+        section#contact div div h3 .underline{
+        text-decoration: underline;
+        }   
+section#contact div div ul{
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 0px;
+    width: 100%;
+}
+    section#contact div div ul li{
+        text-align: center;
+    }
+    section#contact div div ul li:hover{
+            background-color: rgba(256, 256, 256, 0.2);
+    }
+        section#contact div div ul li a{
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
 
+section#contact #calltoaction{
+    background: #ff2828; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #71CC57 0%, #ff2828 4%, #71CC57 8%, #ff2828 12%, #71CC57 16%, #ff2828 20%, #71CC57 24%, #ff2828 28%, #71CC57 32%, #ff2828 36%, #71CC57 40%, #ff2828 44%, #71CC57 48%, #ff2828 52%, #71CC57 56%, #ff2828 60%, #71CC57 64%, #ff2828 68%, #71CC57 72%, #ff2828 76%, #71CC57 80%, #ff2828 84%, #71CC57 88%, #ff2828 92%, #71CC57 96%, #ff2828 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#71CC57), color-stop(4%,#ff2828), color-stop(8%,#71CC57), color-stop(12%,#ff2828), color-stop(16%,#71CC57), color-stop(20%,#ff2828), color-stop(24%,#71CC57), color-stop(28%,#ff2828), color-stop(32%,#71CC57), color-stop(36%,#ff2828), color-stop(40%,#71CC57), color-stop(44%,#ff2828), color-stop(48%,#71CC57), color-stop(52%,#ff2828), color-stop(56%,#71CC57), color-stop(60%,#ff2828), color-stop(64%,#71CC57), color-stop(68%,#ff2828), color-stop(72%,#71CC57), color-stop(76%,#ff2828), color-stop(80%,#71CC57), color-stop(84%,#ff2828), color-stop(88%,#71CC57), color-stop(92%,#ff2828), color-stop(96%,#71CC57), color-stop(100%,#ff2828)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #71CC57 0%,#ff2828 4%,#71CC57 8%,#ff2828 12%,#71CC57 16%,#ff2828 20%,#71CC57 24%,#ff2828 28%,#71CC57 32%,#ff2828 36%,#71CC57 40%,#ff2828 44%,#71CC57 48%,#ff2828 52%,#71CC57 56%,#ff2828 60%,#71CC57 64%,#ff2828 68%,#71CC57 72%,#ff2828 76%,#71CC57 80%,#ff2828 84%,#71CC57 88%,#ff2828 92%,#71CC57 96%,#ff2828 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #71CC57 0%,#ff2828 4%,#71CC57 8%,#ff2828 12%,#71CC57 16%,#ff2828 20%,#71CC57 24%,#ff2828 28%,#71CC57 32%,#ff2828 36%,#71CC57 40%,#ff2828 44%,#71CC57 48%,#ff2828 52%,#71CC57 56%,#ff2828 60%,#71CC57 64%,#ff2828 68%,#71CC57 72%,#ff2828 76%,#71CC57 80%,#ff2828 84%,#71CC57 88%,#ff2828 92%,#71CC57 96%,#ff2828 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #71CC57 0%,#ff2828 4%,#71CC57 8%,#ff2828 12%,#71CC57 16%,#ff2828 20%,#71CC57 24%,#ff2828 28%,#71CC57 32%,#ff2828 36%,#71CC57 40%,#ff2828 44%,#71CC57 48%,#ff2828 52%,#71CC57 56%,#ff2828 60%,#71CC57 64%,#ff2828 68%,#71CC57 72%,#ff2828 76%,#71CC57 80%,#ff2828 84%,#71CC57 88%,#ff2828 92%,#71CC57 96%,#ff2828 100%); /* IE10+ */
+    background: linear-gradient(45deg, #71CC57 0%,#ff2828 4%,#71CC57 8%,#ff2828 12%,#71CC57 16%,#ff2828 20%,#71CC57 24%,#ff2828 28%,#71CC57 32%,#ff2828 36%,#71CC57 40%,#ff2828 44%,#71CC57 48%,#ff2828 52%,#71CC57 56%,#ff2828 60%,#71CC57 64%,#ff2828 68%,#71CC57 72%,#ff2828 76%,#71CC57 80%,#ff2828 84%,#71CC57 88%,#ff2828 92%,#71CC57 96%,#ff2828 100%); /* W3C */
+}
+section#contact #calltoaction a{
+    color: #3B3B3B;
+    font-weight: 900;
+}
 
 /******************************* MAIN FOOTER *********************************/
 
@@ -309,6 +379,10 @@ footer#mainfooter div div{
 }
 /******************************* GENERAL STYLING *********************************/
 
+
+a{
+    color: #9CCDFF;
+}
 
 h1, h2, h3, h4, h5, h6{
     color: white;
@@ -332,6 +406,12 @@ section{
     section header{
         margin: 100px 0px 70px 0px;
     }
+    section header h2{
+        border-bottom: 4px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
 
 img#badge{
     display: block;
@@ -343,8 +423,8 @@ p{
     margin-bottom: 0;
 }
 
-small.rightside{
-    text-align: right;
+.rightside{
+    float: right;
 }
 
 .centered{

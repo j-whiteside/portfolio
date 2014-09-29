@@ -58,7 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\address-book.png" />
+    <Content Include="images\arduino.png" />
     <Content Include="images\jeremywhiteside.jpg" />
+    <Content Include="images\keyboard.png" />
     <Content Include="images\lab.png" />
     <Content Include="images\logos\header.png" />
     <Content Include="images\logos\JW Badge header shadow.png" />
